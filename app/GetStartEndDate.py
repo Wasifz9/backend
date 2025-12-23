@@ -12,10 +12,6 @@ class GetStartEndDate:
             datetime(2025, 1, 1): 'new_year',
 
         }
-
-        for date, name in holiday_dates.items():
-            if date.date() == self.current_datetime.date():
-                return name
         return None
 
     def correct_1d_interval(self, holiday):
